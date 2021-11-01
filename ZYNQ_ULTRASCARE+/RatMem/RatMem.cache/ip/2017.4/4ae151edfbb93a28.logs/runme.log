@@ -1,0 +1,545 @@
+
+*** Running vivado
+    with args -log design_2_AXI_PerfectTranslator_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_2_AXI_PerfectTranslator_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_2_AXI_PerfectTranslator_0_0.tcl -notrace
+Command: synth_design -top design_2_AXI_PerfectTranslator_0_0 -part xczu9eg-ffvb1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2019.11' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 64197 
+WARNING: [Synth 8-1958] event expressions must result in a singular type [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:671]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI_PerfectTranslator_v1_0_M00_AXI with formal parameter declaration list [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_M00_AXI.v:242]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1552.203 ; gain = 0.000 ; free physical = 77715 ; free virtual = 86749
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_2_AXI_PerfectTranslator_0_0' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ip/design_2_AXI_PerfectTranslator_0_0/synth/design_2_AXI_PerfectTranslator_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'AXI_PerfectTranslator_v1_0' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0.v:4]
+	Parameter C_S00_AXI_ID_WIDTH bound to: 16 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 40 - type: integer 
+	Parameter C_S00_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S00_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S00_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S00_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S00_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M00_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M00_AXI_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 49 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_M00_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'AXI_PerfectTranslator_v1_0_S00_AXI' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_ID_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 40 - type: integer 
+	Parameter C_S_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_LSB bound to: 5 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 3 - type: integer 
+	Parameter USER_NUM_MEM bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[0].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[0].mem_data_out_reg[0] was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:662]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[1].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[1].mem_data_out_reg[0] was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:662]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[2].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[2].mem_data_out_reg[0] was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:662]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[3].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[3].mem_data_out_reg[0] was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:662]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[4].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[4].mem_data_out_reg[0] was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:662]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[5].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[5].mem_data_out_reg[0] was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:662]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[6].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[6].mem_data_out_reg[0] was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:662]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[7].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[7].mem_data_out_reg[0] was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:662]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[8].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[8].mem_data_out_reg[0] was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:662]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[9].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[9].mem_data_out_reg[0] was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:662]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[10].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[10].mem_data_out_reg[0] was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:662]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[11].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[11].mem_data_out_reg[0] was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:662]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[12].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[12].mem_data_out_reg[0] was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:662]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[13].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[13].mem_data_out_reg[0] was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:662]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[14].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[14].mem_data_out_reg[0] was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:662]
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[15].byte_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element BRAM_GEN[0].BYTE_BRAM_GEN[15].mem_data_out_reg[0] was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:662]
+WARNING: [Synth 8-6014] Unused sequential element axi_awready_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:326]
+WARNING: [Synth 8-6014] Unused sequential element axi_awv_awr_flag_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:327]
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:313]
+WARNING: [Synth 8-6014] Unused sequential element axi_awlen_cntr_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:360]
+WARNING: [Synth 8-6014] Unused sequential element axi_awburst_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:361]
+WARNING: [Synth 8-6014] Unused sequential element axi_awlen_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:311]
+WARNING: [Synth 8-6014] Unused sequential element axi_wready_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:425]
+WARNING: [Synth 8-6014] Unused sequential element axi_bvalid_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:452]
+WARNING: [Synth 8-6014] Unused sequential element axi_bresp_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:453]
+WARNING: [Synth 8-6014] Unused sequential element axi_buser_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:454]
+WARNING: [Synth 8-6014] Unused sequential element axi_arready_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:487]
+WARNING: [Synth 8-6014] Unused sequential element axi_arv_arr_flag_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:488]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:314]
+WARNING: [Synth 8-6014] Unused sequential element axi_arlen_cntr_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:517]
+WARNING: [Synth 8-6014] Unused sequential element axi_arburst_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:518]
+WARNING: [Synth 8-6014] Unused sequential element axi_arlen_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:519]
+WARNING: [Synth 8-6014] Unused sequential element axi_rlast_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:520]
+WARNING: [Synth 8-6014] Unused sequential element axi_ruser_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:521]
+WARNING: [Synth 8-6014] Unused sequential element axi_rvalid_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:599]
+WARNING: [Synth 8-6014] Unused sequential element axi_rresp_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:600]
+INFO: [Synth 8-256] done synthesizing module 'AXI_PerfectTranslator_v1_0_S00_AXI' (1#1) [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_S00_AXI.v:4]
+WARNING: [Synth 8-350] instance 'AXI_PerfectTranslator_v1_0_S00_AXI_inst' of module 'AXI_PerfectTranslator_v1_0_S00_AXI' requires 92 connections, but only 90 given [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0.v:198]
+INFO: [Synth 8-638] synthesizing module 'AXI_PerfectTranslator_v1_0_M00_AXI' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_M00_AXI.v:4]
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 49 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_TRANSACTIONS_NUM bound to: 4 - type: integer 
+	Parameter C_MASTER_LENGTH bound to: 12 - type: integer 
+	Parameter C_NO_BURSTS_REQ bound to: 4 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter INIT_WRITE bound to: 2'b01 
+	Parameter INIT_READ bound to: 2'b10 
+	Parameter INIT_COMPARE bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_M00_AXI.v:839]
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_M00_AXI.v:435]
+WARNING: [Synth 8-6014] Unused sequential element axi_wvalid_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_M00_AXI.v:470]
+WARNING: [Synth 8-6014] Unused sequential element axi_wlast_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_M00_AXI.v:500]
+WARNING: [Synth 8-6014] Unused sequential element write_index_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_M00_AXI.v:527]
+WARNING: [Synth 8-6014] Unused sequential element axi_wdata_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_M00_AXI.v:543]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_M00_AXI.v:634]
+INFO: [Synth 8-256] done synthesizing module 'AXI_PerfectTranslator_v1_0_M00_AXI' (2#1) [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_M00_AXI.v:4]
+WARNING: [Synth 8-689] width (16) of port connection 'M_AXI_BP_AWID' does not match port width (6) of module 'AXI_PerfectTranslator_v1_0_M00_AXI' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0.v:311]
+WARNING: [Synth 8-689] width (40) of port connection 'M_AXI_BP_AWADDR' does not match port width (49) of module 'AXI_PerfectTranslator_v1_0_M00_AXI' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0.v:312]
+WARNING: [Synth 8-689] width (16) of port connection 'M_AXI_BP_BID' does not match port width (6) of module 'AXI_PerfectTranslator_v1_0_M00_AXI' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0.v:329]
+WARNING: [Synth 8-689] width (16) of port connection 'M_AXI_BP_ARID' does not match port width (6) of module 'AXI_PerfectTranslator_v1_0_M00_AXI' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0.v:334]
+WARNING: [Synth 8-689] width (40) of port connection 'M_AXI_BP_ARADDR' does not match port width (49) of module 'AXI_PerfectTranslator_v1_0_M00_AXI' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0.v:335]
+WARNING: [Synth 8-689] width (16) of port connection 'M_AXI_BP_RID' does not match port width (6) of module 'AXI_PerfectTranslator_v1_0_M00_AXI' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0.v:346]
+WARNING: [Synth 8-350] instance 'AXI_PerfectTranslator_v1_0_M00_AXI_inst' of module 'AXI_PerfectTranslator_v1_0_M00_AXI' requires 93 connections, but only 89 given [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0.v:308]
+INFO: [Synth 8-256] done synthesizing module 'AXI_PerfectTranslator_v1_0' (3#1) [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'design_2_AXI_PerfectTranslator_0_0' (4#1) [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ip/design_2_AXI_PerfectTranslator_0_0/synth/design_2_AXI_PerfectTranslator_0_0.v:56]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_M00_AXI has unconnected port M_AXI_BP_ACLK
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_M00_AXI has unconnected port M_AXI_BP_ARESETN
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_M00_AXI has unconnected port M_AXI_BP_AWREGION[3]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_M00_AXI has unconnected port M_AXI_BP_AWREGION[2]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_M00_AXI has unconnected port M_AXI_BP_AWREGION[1]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_M00_AXI has unconnected port M_AXI_BP_AWREGION[0]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_M00_AXI has unconnected port M_AXI_BP_ARREGION[3]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_M00_AXI has unconnected port M_AXI_BP_ARREGION[2]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_M00_AXI has unconnected port M_AXI_BP_ARREGION[1]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_M00_AXI has unconnected port M_AXI_BP_ARREGION[0]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_AWADDR[39]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_AWADDR[38]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_AWADDR[37]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_AWADDR[36]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_AWADDR[35]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_AWADDR[34]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_AWADDR[33]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_AWADDR[32]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_AWQOS[3]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_AWQOS[2]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_AWQOS[1]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_AWQOS[0]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_ARADDR[39]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_ARADDR[38]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_ARADDR[37]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_ARADDR[36]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_ARADDR[35]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_ARADDR[34]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_ARADDR[33]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_ARADDR[32]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_ARQOS[3]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_ARQOS[2]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_ARQOS[1]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0_S00_AXI has unconnected port S_AXI_ARQOS[0]
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0 has unconnected port m00_axi_aclk
+WARNING: [Synth 8-3331] design AXI_PerfectTranslator_v1_0 has unconnected port m00_axi_aresetn
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1552.203 ; gain = 0.000 ; free physical = 77637 ; free virtual = 86671
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1552.203 ; gain = 0.000 ; free physical = 77613 ; free virtual = 86647
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2188.219 ; gain = 0.000 ; free physical = 74957 ; free virtual = 83999
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 2188.219 ; gain = 636.016 ; free physical = 74993 ; free virtual = 84031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 2188.219 ; gain = 636.016 ; free physical = 74993 ; free virtual = 84031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 2188.219 ; gain = 636.016 ; free physical = 74996 ; free virtual = 84034
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element read_index_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_M00_AXI.v:659]
+WARNING: [Synth 8-6014] Unused sequential element expected_rdata_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_M00_AXI.v:727]
+WARNING: [Synth 8-6014] Unused sequential element write_burst_counter_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_M00_AXI.v:786]
+WARNING: [Synth 8-6014] Unused sequential element read_burst_counter_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_M00_AXI.v:806]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 2188.219 ; gain = 636.016 ; free physical = 75001 ; free virtual = 84039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 3     
++---Registers : 
+	                5 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AXI_PerfectTranslator_v1_0_M00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 3     
++---Registers : 
+	                5 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element inst/AXI_PerfectTranslator_v1_0_M00_AXI_inst/write_burst_counter_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_M00_AXI.v:786]
+WARNING: [Synth 8-6014] Unused sequential element inst/AXI_PerfectTranslator_v1_0_M00_AXI_inst/read_index_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_M00_AXI.v:659]
+WARNING: [Synth 8-6014] Unused sequential element inst/AXI_PerfectTranslator_v1_0_M00_AXI_inst/read_burst_counter_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_M00_AXI.v:806]
+WARNING: [Synth 8-6014] Unused sequential element inst/AXI_PerfectTranslator_v1_0_M00_AXI_inst/expected_rdata_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/design_2/ipshared/c48c/hdl/AXI_PerfectTranslator_v1_0_M00_AXI.v:727]
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_bid[15] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_bid[14] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_bid[13] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_bid[12] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_bid[11] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_bid[4] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_bid[3] driven by constant 1
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_bid[2] driven by constant 1
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_bid[1] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_bid[0] driven by constant 1
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_rid[15] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_rid[14] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_rid[13] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_rid[12] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_rid[11] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_rid[4] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_rid[3] driven by constant 1
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_rid[2] driven by constant 1
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_rid[1] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port s00_axi_rid[0] driven by constant 1
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_awaddr[48] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_awaddr[47] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_awaddr[46] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_awaddr[45] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_awaddr[44] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_awaddr[43] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_awaddr[42] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_awaddr[41] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_awaddr[40] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_awaddr[39] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_awaddr[38] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_awaddr[37] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_awaddr[36] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_awaddr[35] driven by constant 1
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_awaddr[34] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_awaddr[33] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_awaddr[32] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_araddr[48] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_araddr[47] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_araddr[46] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_araddr[45] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_araddr[44] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_araddr[43] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_araddr[42] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_araddr[41] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_araddr[40] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_araddr[39] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_araddr[38] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_araddr[37] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_araddr[36] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_araddr[35] driven by constant 1
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_araddr[34] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_araddr[33] driven by constant 0
+INFO: [Synth 8-3917] design design_2_AXI_PerfectTranslator_0_0 has port m00_axi_araddr[32] driven by constant 0
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awid[15]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awid[14]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awid[13]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awid[12]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awid[11]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awid[4]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awid[3]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awid[2]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awid[1]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awid[0]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awaddr[39]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awaddr[38]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awaddr[37]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awaddr[36]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awaddr[35]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awaddr[34]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awaddr[33]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awaddr[32]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awregion[3]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awregion[2]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awregion[1]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awregion[0]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awqos[3]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awqos[2]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awqos[1]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_awqos[0]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_arid[15]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_arid[14]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_arid[13]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_arid[12]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_arid[11]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_arid[4]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_arid[3]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_arid[2]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_arid[1]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_arid[0]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_araddr[39]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_araddr[38]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_araddr[37]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_araddr[36]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_araddr[35]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_araddr[34]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_araddr[33]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_araddr[32]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_arregion[3]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_arregion[2]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_arregion[1]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_arregion[0]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_arqos[3]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_arqos[2]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_arqos[1]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port s00_axi_arqos[0]
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port m00_axi_aclk
+WARNING: [Synth 8-3331] design design_2_AXI_PerfectTranslator_0_0 has unconnected port m00_axi_aresetn
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 2188.219 ; gain = 636.016 ; free physical = 74970 ; free virtual = 84010
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:01:11 . Memory (MB): peak = 2807.195 ; gain = 1254.992 ; free physical = 72800 ; free virtual = 81873
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:01:11 . Memory (MB): peak = 2807.195 ; gain = 1254.992 ; free physical = 72796 ; free virtual = 81869
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:01:12 . Memory (MB): peak = 2827.227 ; gain = 1275.023 ; free physical = 72788 ; free virtual = 81861
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:01:12 . Memory (MB): peak = 2827.227 ; gain = 1275.023 ; free physical = 72783 ; free virtual = 81856
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:01:12 . Memory (MB): peak = 2827.227 ; gain = 1275.023 ; free physical = 72783 ; free virtual = 81856
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:01:12 . Memory (MB): peak = 2827.227 ; gain = 1275.023 ; free physical = 72781 ; free virtual = 81854
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:01:12 . Memory (MB): peak = 2827.227 ; gain = 1275.023 ; free physical = 72780 ; free virtual = 81853
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:01:12 . Memory (MB): peak = 2827.227 ; gain = 1275.023 ; free physical = 72780 ; free virtual = 81853
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:01:12 . Memory (MB): peak = 2827.227 ; gain = 1275.023 ; free physical = 72780 ; free virtual = 81853
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |    22|
+|2     |LUT1   |     5|
+|3     |LUT2   |     9|
+|4     |LUT3   |    10|
+|5     |LUT4   |    10|
+|6     |LUT5   |     2|
+|7     |LUT6   |    48|
+|8     |FDRE   |   160|
+|9     |FDSE   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------------------------+-----------------------------------+------+
+|      |Instance                                    |Module                             |Cells |
++------+--------------------------------------------+-----------------------------------+------+
+|1     |top                                         |                                   |   267|
+|2     |  inst                                      |AXI_PerfectTranslator_v1_0         |   267|
+|3     |    AXI_PerfectTranslator_v1_0_M00_AXI_inst |AXI_PerfectTranslator_v1_0_M00_AXI |   267|
++------+--------------------------------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:01:12 . Memory (MB): peak = 2827.227 ; gain = 1275.023 ; free physical = 72780 ; free virtual = 81853
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 62 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:51 . Memory (MB): peak = 2827.227 ; gain = 639.008 ; free physical = 72811 ; free virtual = 81884
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:01:12 . Memory (MB): peak = 2827.234 ; gain = 1275.023 ; free physical = 72811 ; free virtual = 81884
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+75 Infos, 166 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:13 . Memory (MB): peak = 2882.242 ; gain = 1351.414 ; free physical = 72735 ; free virtual = 81808
+INFO: [Common 17-1381] The checkpoint '/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.runs/design_2_AXI_PerfectTranslator_0_0_synth_1/design_2_AXI_PerfectTranslator_0_0.dcp' has been generated.

@@ -1,0 +1,18 @@
+verilog xil_defaultlib --include "../../../../RatMem.srcs/sources_1/bd/read_write_master/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/read_write_master/ipshared/02c8/hdl/verilog" \
+"../../../bd/read_write_master/sim/read_write_master.v" \
+"../../../bd/read_write_master/ipshared/e1a5/hdl/reader_v1_0_M00_AXI.v" \
+"../../../bd/read_write_master/ipshared/e1a5/hdl/reader_v1_0.v" \
+"../../../bd/read_write_master/ip/read_write_master_reader_0_0/sim/read_write_master_reader_0_0.v" \
+"../../../bd/read_write_master/ipshared/455a/hdl/writer_v1_0_M00_AXI.v" \
+"../../../bd/read_write_master/ipshared/455a/hdl/writer_v1_0.v" \
+"../../../bd/read_write_master/ip/read_write_master_writer_0_1/sim/read_write_master_writer_0_1.v" \
+
+sv xil_defaultlib --include "../../../../RatMem.srcs/sources_1/bd/read_write_master/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/read_write_master/ipshared/02c8/hdl/verilog" \
+"../../../bd/read_write_master/ip/read_write_master_axi_vip_0_0/sim/read_write_master_axi_vip_0_0_pkg.sv" \
+"../../../bd/read_write_master/ip/read_write_master_axi_vip_0_0/sim/read_write_master_axi_vip_0_0.sv" \
+"../../../bd/read_write_master/ip/read_write_master_axi_vip_1_1/sim/read_write_master_axi_vip_1_1_pkg.sv" \
+"../../../bd/read_write_master/ip/read_write_master_axi_vip_1_1/sim/read_write_master_axi_vip_1_1.sv" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

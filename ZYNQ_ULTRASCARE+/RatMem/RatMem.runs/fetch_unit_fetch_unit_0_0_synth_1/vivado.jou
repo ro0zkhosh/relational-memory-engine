@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Feb 19 12:15:27 2021
+# Process ID: 64085
+# Current directory: /home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.runs/fetch_unit_fetch_unit_0_0_synth_1
+# Command line: vivado -log fetch_unit_fetch_unit_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fetch_unit_fetch_unit_0_0.tcl
+# Log file: /home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.runs/fetch_unit_fetch_unit_0_0_synth_1/fetch_unit_fetch_unit_0_0.vds
+# Journal file: /home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.runs/fetch_unit_fetch_unit_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source fetch_unit_fetch_unit_0_0.tcl -notrace

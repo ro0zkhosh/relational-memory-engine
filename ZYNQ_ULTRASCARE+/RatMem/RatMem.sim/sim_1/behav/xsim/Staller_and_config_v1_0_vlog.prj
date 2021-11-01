@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../RatMem.srcs/sources_1/bd/fetch_unit/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/fetch_unit/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/read_write_master/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/read_write_master/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/design_1/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/design_1/ipshared/cfaa/hdl" --include "../../../../RatMem.srcs/sources_1/bd/requestor_fetch_unit/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/requestor_fetch_unit/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/requestor_fetch_unit/ipshared/e2dd/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/design_relcache/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/design_relcache/ipshared/e2dd/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/design_relcache/ipshared/ec67/hdl" --include "/home/ro0zkhosh/Xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../../../verilog/ConfigurationPort.sv" \
+"../../../../../../verilog/MonitorBypass.sv" \
+"../../../../../../verilog/axi_to_bram.sv" \
+
+verilog xil_defaultlib  --include "../../../../RatMem.srcs/sources_1/bd/fetch_unit/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/fetch_unit/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/read_write_master/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/read_write_master/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/design_1/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/design_1/ipshared/cfaa/hdl" --include "../../../../RatMem.srcs/sources_1/bd/requestor_fetch_unit/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/requestor_fetch_unit/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/requestor_fetch_unit/ipshared/e2dd/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/design_relcache/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/design_relcache/ipshared/e2dd/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/design_relcache/ipshared/ec67/hdl" --include "/home/ro0zkhosh/Xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../../../verilog/example_staller_config_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

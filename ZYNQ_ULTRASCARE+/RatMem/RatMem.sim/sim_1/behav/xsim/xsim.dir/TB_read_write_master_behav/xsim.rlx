@@ -1,0 +1,12 @@
+
+{ 
+    crc :  8453433361965230345  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto b700f324250746cfb9eb35d61782e182 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_1 -L axi_vip_v1_1_1 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TB_read_write_master_behav xil_defaultlib.TB_read_write_master xil_defaultlib.glbl" , 
+    buildDate : "Dec 15 2017" , 
+    buildTime : "20:57:24" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/TB_read_write_master_behav/xsimk\"   \"xsim.dir/TB_read_write_master_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/TB_read_write_master_behav/obj/xsim_1.lnx64.o\" \"xsim.dir/TB_read_write_master_behav/obj/xsim_2.lnx64.o\" \"xsim.dir/TB_read_write_master_behav/obj/xsim_3.lnx64.o\" \"xsim.dir/TB_read_write_master_behav/obj/xsim_4.lnx64.o\" \"xsim.dir/TB_read_write_master_behav/obj/xsim_5.lnx64.o\" \"xsim.dir/TB_read_write_master_behav/obj/xsim_6.lnx64.o\" \"xsim.dir/TB_read_write_master_behav/obj/xsim_7.lnx64.o\" \"/home/renato/Xilinx/Vivado/2017.4/lib/lnx64.o/librdi_simulator_kernel.so\" \"/home/renato/Xilinx/Vivado/2017.4/lib/lnx64.o/librdi_simbridge_kernel.so\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

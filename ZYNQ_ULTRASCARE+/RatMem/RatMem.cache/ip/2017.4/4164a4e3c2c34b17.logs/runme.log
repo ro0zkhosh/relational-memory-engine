@@ -1,0 +1,991 @@
+
+*** Running vivado
+    with args -log design_1_fetch_unit_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_fetch_unit_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_fetch_unit_0_0.tcl -notrace
+Command: synth_design -top design_1_fetch_unit_0_0 -part xczu9eg-ffvb1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2018.09' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21165 
+WARNING: [Synth 8-2507] parameter declaration becomes local in M00_AXI_read_master with formal parameter declaration list [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:192]
+WARNING: [Synth 8-2507] parameter declaration becomes local in M01_AXI_write_master with formal parameter declaration list [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:187]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1549.293 ; gain = 0.000 ; free physical = 6754 ; free virtual = 24438
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_fetch_unit_0_0' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ip/design_1_fetch_unit_0_0/synth/design_1_fetch_unit_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'fetch_unit_v2_0' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0.v:4]
+	Parameter ADDR bound to: 32 - type: integer 
+	Parameter BUS_WIDTH bound to: 16 - type: integer 
+	Parameter BUS_BIT bound to: 7 - type: integer 
+	Parameter TRIDNUM bound to: 16 - type: integer 
+	Parameter TRIDBIT bound to: 4 - type: integer 
+	Parameter SIZEBIT bound to: 4 - type: integer 
+	Parameter C_M00_AXI_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M00_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M00_AXI_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_M00_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M01_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M01_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M01_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M01_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'M00_AXI_read_master' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:5]
+	Parameter ADDR bound to: 32 - type: integer 
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_TRANSACTIONS_NUM bound to: 4 - type: integer 
+	Parameter C_MASTER_LENGTH bound to: 12 - type: integer 
+	Parameter C_NO_BURSTS_REQ bound to: 4 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter INIT_READ bound to: 2'b10 
+WARNING: [Synth 8-6014] Unused sequential element read_mismatch_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:626]
+WARNING: [Synth 8-6014] Unused sequential element expected_rdata_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:650]
+WARNING: [Synth 8-6014] Unused sequential element error_reg_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:668]
+WARNING: [Synth 8-6014] Unused sequential element write_burst_counter_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:709]
+WARNING: [Synth 8-6014] Unused sequential element burst_write_active_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:849]
+WARNING: [Synth 8-6014] Unused sequential element writes_done_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:867]
+WARNING: [Synth 8-3848] Net R_DRAM_DATA in module/entity M00_AXI_read_master does not have driver. [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:37]
+INFO: [Synth 8-256] done synthesizing module 'M00_AXI_read_master' (1#1) [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:5]
+INFO: [Synth 8-638] synthesizing module 'ExtCol' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:8]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:138]
+WARNING: [Synth 8-6014] Unused sequential element r_ColectedData_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:48]
+INFO: [Synth 8-256] done synthesizing module 'ExtCol' (2#1) [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:8]
+WARNING: [Synth 8-689] width (16) of port connection 'i_row_cnt' does not match port width (7) of module 'ExtCol' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0.v:234]
+WARNING: [Synth 8-689] width (4) of port connection 'i_col_width' does not match port width (5) of module 'ExtCol' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0.v:235]
+WARNING: [Synth 8-689] width (7) of port connection 'i_start' does not match port width (4) of module 'ExtCol' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0.v:239]
+WARNING: [Synth 8-689] width (7) of port connection 'i_end' does not match port width (4) of module 'ExtCol' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0.v:240]
+WARNING: [Synth 8-350] instance 'extcol_inst' of module 'ExtCol' requires 14 connections, but only 11 given [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0.v:229]
+INFO: [Synth 8-638] synthesizing module 'M01_AXI_write_master' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:4]
+	Parameter ADDR bound to: 32 - type: integer 
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_TRANSACTIONS_NUM bound to: 4 - type: integer 
+	Parameter C_MASTER_LENGTH bound to: 12 - type: integer 
+	Parameter C_NO_BURSTS_REQ bound to: 6 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter INIT_WRITE bound to: 2'b01 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:754]
+WARNING: [Synth 8-6014] Unused sequential element read_index_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:574]
+WARNING: [Synth 8-6014] Unused sequential element read_mismatch_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:618]
+WARNING: [Synth 8-6014] Unused sequential element expected_rdata_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:642]
+WARNING: [Synth 8-6014] Unused sequential element error_reg_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:660]
+WARNING: [Synth 8-6014] Unused sequential element read_burst_counter_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:721]
+WARNING: [Synth 8-6014] Unused sequential element burst_read_active_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:875]
+WARNING: [Synth 8-6014] Unused sequential element reads_done_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:894]
+WARNING: [Synth 8-3848] Net W_SPM_DATA in module/entity M01_AXI_write_master does not have driver. [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:35]
+INFO: [Synth 8-256] done synthesizing module 'M01_AXI_write_master' (3#1) [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:4]
+WARNING: [Synth 8-689] width (128) of port connection 'W_SPM_DATA' does not match port width (32) of module 'M01_AXI_write_master' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0.v:260]
+INFO: [Synth 8-256] done synthesizing module 'fetch_unit_v2_0' (4#1) [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'design_1_fetch_unit_0_0' (5#1) [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ip/design_1_fetch_unit_0_0/synth/design_1_fetch_unit_0_0.v:56]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[31]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[30]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[29]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[28]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[27]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[26]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[25]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[24]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[23]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[22]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[21]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[20]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[19]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[18]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[17]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[16]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[15]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[14]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[13]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[12]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[11]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[10]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[9]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[8]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[7]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[6]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[5]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[4]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[3]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[2]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[1]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_SPM_DATA[0]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[31]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[30]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[29]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[28]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[27]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[26]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[25]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[24]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[23]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[22]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[21]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[20]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[19]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[18]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[17]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[16]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[15]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[14]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[13]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[12]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[11]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[10]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[9]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[8]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[7]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[6]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[5]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[4]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[3]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[2]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[1]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port W_ADDR[0]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_BUSER[0]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[31]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[30]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[29]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[28]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[27]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[26]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[25]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[24]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[23]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[22]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[21]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[20]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[19]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[18]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[17]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[16]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[15]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[14]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[13]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[12]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[11]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[10]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[9]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[8]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[7]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[6]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[5]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[4]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[3]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[2]
+WARNING: [Synth 8-3331] design M01_AXI_write_master has unconnected port M_AXI_RDATA[1]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1549.293 ; gain = 0.000 ; free physical = 6771 ; free virtual = 24455
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1549.293 ; gain = 0.000 ; free physical = 6771 ; free virtual = 24456
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2178.223 ; gain = 1.000 ; free physical = 6064 ; free virtual = 23748
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2178.223 ; gain = 628.930 ; free physical = 6125 ; free virtual = 23809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2178.223 ; gain = 628.930 ; free physical = 6125 ; free virtual = 23809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2178.223 ; gain = 628.930 ; free physical = 6127 ; free virtual = 23811
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'ERROR_reg' into 'compare_done_reg' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:756]
+WARNING: [Synth 8-6014] Unused sequential element ERROR_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:756]
+WARNING: [Synth 8-6014] Unused sequential element write_index_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:449]
+WARNING: [Synth 8-6014] Unused sequential element axi_wdata_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:261]
+WARNING: [Synth 8-6014] Unused sequential element read_index_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:582]
+WARNING: [Synth 8-6014] Unused sequential element read_burst_counter_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:729]
+INFO: [Synth 8-5546] ROM "o_done" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element r_row_cnt_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:49]
+INFO: [Synth 8-4471] merging register 'ERROR_reg' into 'compare_done_reg' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:748]
+WARNING: [Synth 8-6014] Unused sequential element ERROR_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:748]
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:244]
+WARNING: [Synth 8-6014] Unused sequential element write_index_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:442]
+WARNING: [Synth 8-6014] Unused sequential element axi_wdata_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:269]
+WARNING: [Synth 8-6014] Unused sequential element write_burst_counter_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:701]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2178.223 ; gain = 628.930 ; free physical = 6117 ; free virtual = 23802
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 4     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	              256 Bit    Registers := 1     
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 29    
++---Muxes : 
+	  17 Input    256 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 23    
+	   3 Input      1 Bit        Muxes := 3     
+	  17 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module M00_AXI_read_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 2     
+Module ExtCol 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	              256 Bit    Registers := 1     
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  17 Input    256 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	  17 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module M01_AXI_write_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element r_row_cnt_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:49]
+WARNING: [Synth 8-6014] Unused sequential element inst/M00_AXI_read_master_inst/read_index_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:582]
+WARNING: [Synth 8-6014] Unused sequential element inst/M00_AXI_read_master_inst/read_burst_counter_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:729]
+WARNING: [Synth 8-6014] Unused sequential element inst/M00_AXI_read_master_inst/write_index_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:449]
+WARNING: [Synth 8-6014] Unused sequential element inst/M00_AXI_read_master_inst/axi_wdata_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M00_AXI.v:261]
+WARNING: [Synth 8-6014] Unused sequential element inst/M01_AXI_write_master_inst/write_burst_counter_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:701]
+WARNING: [Synth 8-6014] Unused sequential element inst/M01_AXI_write_master_inst/axi_awaddr_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:244]
+WARNING: [Synth 8-6014] Unused sequential element inst/M01_AXI_write_master_inst/write_index_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:442]
+WARNING: [Synth 8-6014] Unused sequential element inst/M01_AXI_write_master_inst/axi_wdata_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element inst/M01_AXI_write_master_inst/axi_araddr_reg was removed.  [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/hdl/fetch_unit_v2_0_M01_AXI.v:269]
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awid[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awlen[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awlen[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awlen[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awlen[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awlen[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awlen[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awlen[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awlen[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awsize[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awsize[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awsize[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awburst[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awburst[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awlock driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awcache[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awcache[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awcache[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awcache[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awprot[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awprot[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awprot[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awqos[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awqos[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awqos[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awqos[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_awuser[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_wstrb[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_wstrb[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_wstrb[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_wstrb[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_wuser[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arid[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arlen[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arlen[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arlen[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arlen[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arlen[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arlen[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arlen[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arlen[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arsize[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arsize[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arsize[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arburst[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arburst[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arlock driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arcache[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arcache[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arcache[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arcache[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arprot[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arprot[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arprot[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arqos[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arqos[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arqos[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_arqos[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m01_axi_aruser[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awid[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awid[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awid[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awid[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awid[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awid[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awlen[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awlen[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awlen[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awlen[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awlen[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awlen[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awlen[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awlen[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awsize[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awsize[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awsize[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awburst[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awburst[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awlock driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awcache[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awcache[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awcache[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awcache[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awprot[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awprot[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awprot[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awqos[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awqos[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awqos[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awqos[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_awuser[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_wstrb[15] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_wstrb[14] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_wstrb[13] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_wstrb[12] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_wstrb[11] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_wstrb[10] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_wstrb[9] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_wstrb[8] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fetch_unit_0_0 has port m00_axi_wstrb[7] driven by constant 1
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/M00_AXI_read_master_inst/mst_exec_state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/M00_AXI_read_master_inst/start_single_burst_write_reg )
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[29]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/M01_AXI_write_master_inst/mst_exec_state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/M01_AXI_write_master_inst/start_single_burst_read_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/M00_AXI_read_master_inst/compare_done_reg )
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[0]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[1]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[2]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[3]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[4]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[5]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[6]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[7]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[8]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[9]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[10]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[11]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[12]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[13]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[14]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[15]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[16]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[17]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[18]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[19]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[20]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[21]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[22]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[23]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[24]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[25]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[26]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[27]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[28]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[30]' (FDRE) to 'inst/M00_AXI_read_master_inst/axi_awaddr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/M00_AXI_read_master_inst/axi_awaddr_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/M01_AXI_write_master_inst/compare_done_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\inst/M01_AXI_write_master_inst/axi_araddr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\inst/M01_AXI_write_master_inst/axi_araddr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\inst/M01_AXI_write_master_inst/axi_araddr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\inst/M01_AXI_write_master_inst/axi_araddr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\inst/M01_AXI_write_master_inst/axi_araddr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\inst/M01_AXI_write_master_inst/axi_araddr_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_7/\inst/M01_AXI_write_master_inst/axi_awaddr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_7/\inst/M01_AXI_write_master_inst/axi_awaddr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_7/\inst/M01_AXI_write_master_inst/axi_awaddr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_7/\inst/M01_AXI_write_master_inst/axi_awaddr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_7/\inst/M01_AXI_write_master_inst/axi_awaddr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_7/\inst/M01_AXI_write_master_inst/axi_awaddr_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\inst/M01_AXI_write_master_inst/axi_araddr_reg[29] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_4/\inst/M00_AXI_read_master_inst/axi_wdata_reg[0] )
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[31]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[30]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[29]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[28]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[27]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[26]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[25]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[24]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[23]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[22]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[21]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[20]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[19]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[18]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[17]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[16]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[15]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[14]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[13]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[12]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[11]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[10]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[9]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[8]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[7]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[6]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[5]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[4]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[3]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[2]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[1]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/o_addr_reg[0]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[127]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[126]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[125]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[124]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[123]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[122]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[121]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[120]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[119]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[118]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[117]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[116]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[115]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[114]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[113]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[112]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[111]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[110]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[109]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[108]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[107]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[106]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[105]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[104]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[103]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[102]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[101]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[100]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[99]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[98]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[97]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[96]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[95]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[94]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[93]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[92]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[91]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[90]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[89]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[88]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[87]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[86]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[85]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[84]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[83]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[82]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[81]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[80]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[79]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[78]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[77]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[76]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[75]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[74]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[73]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[72]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[71]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[70]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[69]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[68]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[67]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[66]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[65]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[64]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[63]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[62]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[61]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/extcol_inst/r_extData_r_reg[60]) is unused and will be removed from module design_1_fetch_unit_0_0.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[127] with 1st driver pin 'inst/extcol_inst/r_outData_reg[127]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[127] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[127] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[126] with 1st driver pin 'inst/extcol_inst/r_outData_reg[126]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[126] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[126] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[125] with 1st driver pin 'inst/extcol_inst/r_outData_reg[125]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[125] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[125] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[124] with 1st driver pin 'inst/extcol_inst/r_outData_reg[124]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[124] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[124] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[123] with 1st driver pin 'inst/extcol_inst/r_outData_reg[123]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[123] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[123] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[122] with 1st driver pin 'inst/extcol_inst/r_outData_reg[122]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[122] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[122] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[121] with 1st driver pin 'inst/extcol_inst/r_outData_reg[121]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[121] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[121] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[120] with 1st driver pin 'inst/extcol_inst/r_outData_reg[120]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[120] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[120] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[119] with 1st driver pin 'inst/extcol_inst/r_outData_reg[119]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[119] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[119] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[118] with 1st driver pin 'inst/extcol_inst/r_outData_reg[118]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[118] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[118] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[117] with 1st driver pin 'inst/extcol_inst/r_outData_reg[117]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[117] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[117] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[116] with 1st driver pin 'inst/extcol_inst/r_outData_reg[116]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[116] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[116] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[115] with 1st driver pin 'inst/extcol_inst/r_outData_reg[115]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[115] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[115] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[114] with 1st driver pin 'inst/extcol_inst/r_outData_reg[114]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[114] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[114] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[113] with 1st driver pin 'inst/extcol_inst/r_outData_reg[113]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[113] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[113] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[112] with 1st driver pin 'inst/extcol_inst/r_outData_reg[112]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[112] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[112] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[111] with 1st driver pin 'inst/extcol_inst/r_outData_reg[111]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[111] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[111] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[110] with 1st driver pin 'inst/extcol_inst/r_outData_reg[110]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[110] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[110] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[109] with 1st driver pin 'inst/extcol_inst/r_outData_reg[109]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[109] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[109] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[108] with 1st driver pin 'inst/extcol_inst/r_outData_reg[108]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[108] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[108] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[107] with 1st driver pin 'inst/extcol_inst/r_outData_reg[107]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[107] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[107] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[106] with 1st driver pin 'inst/extcol_inst/r_outData_reg[106]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[106] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[106] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[105] with 1st driver pin 'inst/extcol_inst/r_outData_reg[105]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[105] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[105] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[104] with 1st driver pin 'inst/extcol_inst/r_outData_reg[104]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[104] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[104] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[103] with 1st driver pin 'inst/extcol_inst/r_outData_reg[103]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[103] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[103] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[102] with 1st driver pin 'inst/extcol_inst/r_outData_reg[102]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[102] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[102] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[101] with 1st driver pin 'inst/extcol_inst/r_outData_reg[101]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[101] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[101] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[100] with 1st driver pin 'inst/extcol_inst/r_outData_reg[100]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[100] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[100] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[99] with 1st driver pin 'inst/extcol_inst/r_outData_reg[99]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[99] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[99] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[98] with 1st driver pin 'inst/extcol_inst/r_outData_reg[98]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[98] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[98] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[97] with 1st driver pin 'inst/extcol_inst/r_outData_reg[97]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[97] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[97] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[96] with 1st driver pin 'inst/extcol_inst/r_outData_reg[96]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[96] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[96] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[95] with 1st driver pin 'inst/extcol_inst/r_outData_reg[95]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[95] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[95] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[94] with 1st driver pin 'inst/extcol_inst/r_outData_reg[94]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[94] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[94] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[93] with 1st driver pin 'inst/extcol_inst/r_outData_reg[93]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[93] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[93] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[92] with 1st driver pin 'inst/extcol_inst/r_outData_reg[92]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[92] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[92] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[91] with 1st driver pin 'inst/extcol_inst/r_outData_reg[91]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[91] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[91] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[90] with 1st driver pin 'inst/extcol_inst/r_outData_reg[90]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[90] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[90] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[89] with 1st driver pin 'inst/extcol_inst/r_outData_reg[89]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[89] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[89] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[88] with 1st driver pin 'inst/extcol_inst/r_outData_reg[88]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[88] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[88] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[87] with 1st driver pin 'inst/extcol_inst/r_outData_reg[87]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[87] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[87] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[86] with 1st driver pin 'inst/extcol_inst/r_outData_reg[86]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[86] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[86] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[85] with 1st driver pin 'inst/extcol_inst/r_outData_reg[85]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[85] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[85] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[84] with 1st driver pin 'inst/extcol_inst/r_outData_reg[84]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[84] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[84] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[83] with 1st driver pin 'inst/extcol_inst/r_outData_reg[83]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[83] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[83] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[82] with 1st driver pin 'inst/extcol_inst/r_outData_reg[82]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[82] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[82] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[81] with 1st driver pin 'inst/extcol_inst/r_outData_reg[81]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[81] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[81] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[80] with 1st driver pin 'inst/extcol_inst/r_outData_reg[80]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[80] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[80] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[79] with 1st driver pin 'inst/extcol_inst/r_outData_reg[79]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[79] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[79] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[78] with 1st driver pin 'inst/extcol_inst/r_outData_reg[78]/Q' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net o_data[78] with 2nd driver pin 'GND' [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+INFO: [Common 17-14] Message 'Synth 8-3352' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[78] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[77] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[76] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[75] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[74] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[73] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[72] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[71] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[70] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[69] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[68] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[67] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[66] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[65] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[64] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[63] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[62] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[61] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[60] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[59] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[58] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[57] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[56] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[55] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[54] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[53] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[52] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[51] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[50] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[49] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[48] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[47] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[46] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[45] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[44] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[43] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[42] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[41] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[40] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[39] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[38] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[37] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[36] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[35] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[34] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[33] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net o_data[32] is connected to constant driver, other driver is ignored [/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/d56f/src/ExtCol.v:135]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 2178.223 ; gain = 628.930 ; free physical = 6107 ; free virtual = 23791
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:01:00 . Memory (MB): peak = 2790.199 ; gain = 1240.906 ; free physical = 5333 ; free virtual = 23018
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:01:00 . Memory (MB): peak = 2790.199 ; gain = 1240.906 ; free physical = 5333 ; free virtual = 23018
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/extcol_inst/r_en_reg' (FDR) to 'inst/M00_AXI_read_master_inst/init_txn_ff_reg'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:01:00 . Memory (MB): peak = 2810.238 ; gain = 1260.945 ; free physical = 5332 ; free virtual = 23016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:01:01 . Memory (MB): peak = 2810.238 ; gain = 1260.945 ; free physical = 5332 ; free virtual = 23016
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:01:01 . Memory (MB): peak = 2810.238 ; gain = 1260.945 ; free physical = 5332 ; free virtual = 23016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:01:01 . Memory (MB): peak = 2810.238 ; gain = 1260.945 ; free physical = 5332 ; free virtual = 23016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:01:01 . Memory (MB): peak = 2810.238 ; gain = 1260.945 ; free physical = 5332 ; free virtual = 23016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:01:01 . Memory (MB): peak = 2810.238 ; gain = 1260.945 ; free physical = 5332 ; free virtual = 23016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:01:01 . Memory (MB): peak = 2810.238 ; gain = 1260.945 ; free physical = 5332 ; free virtual = 23016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |    10|
+|2     |LUT1   |    10|
+|3     |LUT2   |    10|
+|4     |LUT3   |    10|
+|5     |LUT4   |    12|
+|6     |LUT5   |     9|
+|7     |LUT6   |     7|
+|8     |FDRE   |   132|
+|9     |FDSE   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------------------+---------------------+------+
+|      |Instance                      |Module               |Cells |
++------+------------------------------+---------------------+------+
+|1     |top                           |                     |   201|
+|2     |  inst                        |fetch_unit_v2_0      |   201|
+|3     |    M00_AXI_read_master_inst  |M00_AXI_read_master  |    78|
+|4     |    M01_AXI_write_master_inst |M01_AXI_write_master |   122|
+|5     |    extcol_inst               |ExtCol               |     1|
++------+------------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:01:01 . Memory (MB): peak = 2810.238 ; gain = 1260.945 ; free physical = 5332 ; free virtual = 23016
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 290 critical warnings and 301 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:43 . Memory (MB): peak = 2810.238 ; gain = 632.016 ; free physical = 5368 ; free virtual = 23053
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:01:01 . Memory (MB): peak = 2810.246 ; gain = 1260.945 ; free physical = 5368 ; free virtual = 23053
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+284 Infos, 146 Warnings, 196 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:01:02 . Memory (MB): peak = 2865.254 ; gain = 1337.336 ; free physical = 5354 ; free virtual = 23039
+INFO: [Common 17-1381] The checkpoint '/home/renato/RelationalMem/ZYNQ_ULTRASCARE+/RatMem/RatMem.runs/design_1_fetch_unit_0_0_synth_1/design_1_fetch_unit_0_0.dcp' has been generated.

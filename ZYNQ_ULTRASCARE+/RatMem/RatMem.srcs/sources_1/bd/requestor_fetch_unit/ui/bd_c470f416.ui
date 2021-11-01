@@ -1,0 +1,42 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port i_en_0 -pg 1 -y 180 -defaultsOSRD
+preplace port aresetn_0 -pg 1 -y 220 -defaultsOSRD
+preplace port aclk_0 -pg 1 -y 200 -defaultsOSRD
+preplace portBus i_row_size_0 -pg 1 -y 260 -defaultsOSRD
+preplace portBus i_col_width_0 -pg 1 -y 300 -defaultsOSRD
+preplace portBus i_offset_0 -pg 1 -y 320 -defaultsOSRD
+preplace portBus i_row_cnt_0 -pg 1 -y 280 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 3 -y 90 -defaultsOSRD
+preplace inst axi_vip_0 -pg 1 -lvl 4 -y 110 -defaultsOSRD
+preplace inst fetch_unit_0 -pg 1 -lvl 2 -y 300 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 4 -y 320 -defaultsOSRD
+preplace inst axi_vip_2 -pg 1 -lvl 2 -y 60 -defaultsOSRD
+preplace inst requestor_0 -pg 1 -lvl 1 -y 240 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 3 -y 320 -defaultsOSRD
+preplace netloc requestor_0_o_w_strb 1 1 1 430
+preplace netloc i_row_size_0_1 1 0 1 NJ
+preplace netloc fetch_unit_0_fetch_unit_is_ready 1 0 3 10 110 390J 130 900
+preplace netloc i_row_cnt_0_1 1 0 1 NJ
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 3 1 N
+preplace netloc requestor_0_o_en 1 1 1 390
+preplace netloc requestor_0_o_w_addr 1 1 1 420
+preplace netloc requestor_0_o_r_start 1 1 1 400
+preplace netloc requestor_0_o_r_addr 1 1 1 N
+preplace netloc smartconnect_0_M00_AXI 1 3 1 N
+preplace netloc i_offset_0_1 1 0 1 NJ
+preplace netloc fetch_unit_0_M01_AXI 1 2 1 N
+preplace netloc requestor_0_o_r_end 1 1 1 410
+preplace netloc fetch_unit_0_M00_AXI 1 2 1 920
+preplace netloc i_col_width_0_1 1 0 2 0 370 440
+preplace netloc aresetn_0_1 1 0 4 -10 80 460 120 910 170 1210J
+preplace netloc axi_vip_2_M_AXI 1 2 1 N
+preplace netloc aclk_0_1 1 0 4 0 100 450 140 930 10 1210J
+preplace netloc requestor_0_o_r_size 1 1 1 N
+preplace netloc i_en_0_1 1 0 1 NJ
+levelinfo -pg 1 -30 200 680 1070 1350 1490 -top 0 -bot 1090
+",
+}
+0

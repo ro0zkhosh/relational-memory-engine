@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../RatMem.ip_user_files/bd/requestor_fetch_unit/ip/requestor_fetch_unit_smartconnect_0_1/bd_0/ip/ip_1/sim/bd_82ce_psr_aclk_0.vhd" \
+"../../../../RatMem.ip_user_files/bd/requestor_fetch_unit/ip/requestor_fetch_unit_axi_bram_ctrl_0_0/sim/requestor_fetch_unit_axi_bram_ctrl_0_0.vhd" \
+
+# Do not sort compile order
+nosort

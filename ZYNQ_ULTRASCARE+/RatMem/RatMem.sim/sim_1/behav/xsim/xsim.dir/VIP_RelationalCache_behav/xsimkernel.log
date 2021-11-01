@@ -1,0 +1,7 @@
+Running: xsim.dir/VIP_RelationalCache_behav/xsimk -simmode gui -wdb VIP_RelationalCache_behav.wdb -simrunnum 0 -socket 50885
+Design successfully loaded
+Design Loading Memory Usage: 69124 KB (Peak: 69124 KB)
+Design Loading CPU Usage: 70 ms
+Simulation completed
+Simulation Memory Usage: 307884 KB (Peak: 340636 KB)
+Simulation CPU Usage: 25230 ms

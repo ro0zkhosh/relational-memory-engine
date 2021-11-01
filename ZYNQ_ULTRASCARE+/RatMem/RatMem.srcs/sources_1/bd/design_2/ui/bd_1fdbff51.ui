@@ -1,0 +1,25 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace inst AXI_PerfectTranslator_0 -pg 1 -lvl 3 -y 110 -defaultsOSRD
+preplace inst rst_ps8_0_99M -pg 1 -lvl 1 -y 290 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -y 100 -defaultsOSRD
+preplace inst RelationalCache_0 -pg 1 -lvl 2 -y 130 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 2 -y -110 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 3 -y 290 -defaultsOSRD
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 3 20 0 670 -40 1020
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_LPD 1 1 1 660
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 2 690 10 1010J
+preplace netloc AXI_PerfectTranslator_0_M00_AXI 1 0 4 10 -20 NJ -20 NJ -20 1420
+preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 1 2 680 0 1000
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 30 10 650
+preplace netloc RelationalCache_0_M00_AXI 1 2 1 1030
+levelinfo -pg 1 -10 340 860 1250 1440 -top -210 -bot 1150
+",
+}
+{
+   da_bram_cntlr_cnt: "4",
+   da_clkrst_cnt: "5",
+   da_zynq_ultra_ps_e_cnt: "1",
+}

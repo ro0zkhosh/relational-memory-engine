@@ -1,0 +1,770 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Feb 19 12:15:27 2021
+# Process ID: 64085
+# Current directory: /home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.runs/fetch_unit_fetch_unit_0_0_synth_1
+# Command line: vivado -log fetch_unit_fetch_unit_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fetch_unit_fetch_unit_0_0.tcl
+# Log file: /home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.runs/fetch_unit_fetch_unit_0_0_synth_1/fetch_unit_fetch_unit_0_0.vds
+# Journal file: /home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.runs/fetch_unit_fetch_unit_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source fetch_unit_fetch_unit_0_0.tcl -notrace
+Command: synth_design -top fetch_unit_fetch_unit_0_0 -part xczu9eg-ffvb1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2019.11' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 64126 
+WARNING: [Synth 8-2507] parameter declaration becomes local in reader_v1_0_M00_AXI with formal parameter declaration list [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/reader_v1_0_M00_AXI.v:193]
+WARNING: [Synth 8-2507] parameter declaration becomes local in writer_v1_0_M00_AXI with formal parameter declaration list [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:191]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1552.199 ; gain = 0.000 ; free physical = 77857 ; free virtual = 86883
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fetch_unit_fetch_unit_0_0' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ip/fetch_unit_fetch_unit_0_0/synth/fetch_unit_fetch_unit_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'fetch_unit_v2_0' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/hdl/fetch_unit_v2_0.v:4]
+	Parameter ADDR bound to: 32 - type: integer 
+	Parameter BUS_WIDTH bound to: 16 - type: integer 
+	Parameter BUS_BIT bound to: 8 - type: integer 
+	Parameter TRIDNUM bound to: 16 - type: integer 
+	Parameter TRIDBIT bound to: 4 - type: integer 
+	Parameter SIZEBIT bound to: 5 - type: integer 
+	Parameter C_M00_AXI_BURST_LEN bound to: 1 - type: integer 
+	Parameter C_M00_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_M00_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_BURST_LEN bound to: 1 - type: integer 
+	Parameter C_M01_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M01_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_M01_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter o_r_size bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'reader_v1_0_M00_AXI' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/reader_v1_0_M00_AXI.v:4]
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_BURST_LEN bound to: 1 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_TRANSACTIONS_NUM bound to: 0 - type: integer 
+	Parameter C_MASTER_LENGTH bound to: 12 - type: integer 
+	Parameter C_NO_BURSTS_REQ bound to: 8 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter INIT_READ bound to: 2'b10 
+WARNING: [Synth 8-6014] Unused sequential element read_mismatch_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/reader_v1_0_M00_AXI.v:630]
+WARNING: [Synth 8-6014] Unused sequential element write_burst_counter_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/reader_v1_0_M00_AXI.v:713]
+WARNING: [Synth 8-6014] Unused sequential element read_burst_counter_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/reader_v1_0_M00_AXI.v:733]
+WARNING: [Synth 8-6014] Unused sequential element burst_write_active_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/reader_v1_0_M00_AXI.v:853]
+WARNING: [Synth 8-6014] Unused sequential element writes_done_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/reader_v1_0_M00_AXI.v:871]
+INFO: [Synth 8-256] done synthesizing module 'reader_v1_0_M00_AXI' (1#1) [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/reader_v1_0_M00_AXI.v:4]
+WARNING: [Synth 8-689] width (9) of port connection 'burst_ctrl' does not match port width (8) of module 'reader_v1_0_M00_AXI' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/hdl/fetch_unit_v2_0.v:302]
+WARNING: [Synth 8-350] instance 'reader_v1_0_M00_AXI_inst' of module 'reader_v1_0_M00_AXI' requires 51 connections, but only 49 given [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/hdl/fetch_unit_v2_0.v:301]
+INFO: [Synth 8-638] synthesizing module 'ExtCol' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/ExtCol.v:8]
+INFO: [Synth 8-256] done synthesizing module 'ExtCol' (2#1) [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/ExtCol.v:8]
+WARNING: [Synth 8-689] width (8) of port connection 'i_r_size' does not match port width (5) of module 'ExtCol' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/hdl/fetch_unit_v2_0.v:360]
+WARNING: [Synth 8-689] width (5) of port connection 'i_r_start' does not match port width (4) of module 'ExtCol' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/hdl/fetch_unit_v2_0.v:365]
+WARNING: [Synth 8-689] width (8) of port connection 'i_end' does not match port width (7) of module 'ExtCol' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/hdl/fetch_unit_v2_0.v:366]
+INFO: [Synth 8-638] synthesizing module 'writer_v1_0_M00_AXI' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:4]
+	Parameter ADDR bound to: 32 - type: integer 
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_BURST_LEN bound to: 1 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_TRANSACTIONS_NUM bound to: 0 - type: integer 
+	Parameter C_MASTER_LENGTH bound to: 12 - type: integer 
+	Parameter C_NO_BURSTS_REQ bound to: 8 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter INIT_WRITE bound to: 2'b01 
+WARNING: [Synth 8-6014] Unused sequential element read_index_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:647]
+WARNING: [Synth 8-6014] Unused sequential element read_mismatch_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:691]
+WARNING: [Synth 8-6014] Unused sequential element expected_rdata_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:715]
+WARNING: [Synth 8-6014] Unused sequential element error_reg_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:733]
+WARNING: [Synth 8-6014] Unused sequential element write_burst_counter_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:774]
+WARNING: [Synth 8-6014] Unused sequential element read_burst_counter_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:794]
+WARNING: [Synth 8-6014] Unused sequential element burst_write_active_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:914]
+WARNING: [Synth 8-6014] Unused sequential element writes_done_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:932]
+WARNING: [Synth 8-6014] Unused sequential element burst_read_active_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:949]
+WARNING: [Synth 8-6014] Unused sequential element reads_done_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:968]
+WARNING: [Synth 8-3848] Net compare_done in module/entity writer_v1_0_M00_AXI does not have driver. [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:230]
+WARNING: [Synth 8-3848] Net ERROR in module/entity writer_v1_0_M00_AXI does not have driver. [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:48]
+WARNING: [Synth 8-3848] Net start_single_burst_read in module/entity writer_v1_0_M00_AXI does not have driver. [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:226]
+INFO: [Synth 8-256] done synthesizing module 'writer_v1_0_M00_AXI' (3#1) [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:4]
+WARNING: [Synth 8-689] width (33) of port connection 'W_ADDR' does not match port width (32) of module 'writer_v1_0_M00_AXI' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/hdl/fetch_unit_v2_0.v:427]
+WARNING: [Synth 8-689] width (38) of port connection 'WRITE_LEN' does not match port width (8) of module 'writer_v1_0_M00_AXI' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/hdl/fetch_unit_v2_0.v:431]
+WARNING: [Synth 8-689] width (128) of port connection 'W_STRB' does not match port width (64) of module 'writer_v1_0_M00_AXI' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/hdl/fetch_unit_v2_0.v:433]
+WARNING: [Synth 8-350] instance 'writer_v1_0_M00_AXI_inst' of module 'writer_v1_0_M00_AXI' requires 53 connections, but only 51 given [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/hdl/fetch_unit_v2_0.v:425]
+WARNING: [Synth 8-6014] Unused sequential element col_width_reg_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/hdl/fetch_unit_v2_0.v:222]
+INFO: [Synth 8-256] done synthesizing module 'fetch_unit_v2_0' (4#1) [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/hdl/fetch_unit_v2_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'fetch_unit_fetch_unit_0_0' (5#1) [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ip/fetch_unit_fetch_unit_0_0/synth/fetch_unit_fetch_unit_0_0.v:56]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port TXN_DONE
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port ERROR
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_BUSER[0]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[127]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[126]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[125]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[124]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[123]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[122]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[121]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[120]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[119]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[118]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[117]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[116]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[115]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[114]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[113]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[112]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[111]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[110]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[109]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[108]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[107]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[106]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[105]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[104]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[103]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[102]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[101]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[100]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[99]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[98]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[97]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[96]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[95]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[94]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[93]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[92]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[91]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[90]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[89]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[88]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[87]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[86]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[85]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[84]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[83]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[82]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[81]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[80]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[79]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[78]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[77]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[76]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[75]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[74]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[73]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[72]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[71]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[70]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[69]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[68]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[67]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[66]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[65]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[64]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[63]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[62]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[61]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[60]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[59]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[58]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[57]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[56]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[55]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[54]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[53]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[52]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[51]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[50]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[49]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[48]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[47]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[46]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[45]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[44]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[43]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[42]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[41]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[40]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[39]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[38]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[37]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[36]
+WARNING: [Synth 8-3331] design writer_v1_0_M00_AXI has unconnected port M_AXI_RDATA[35]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1552.199 ; gain = 0.000 ; free physical = 77776 ; free virtual = 86804
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1552.199 ; gain = 0.000 ; free physical = 77761 ; free virtual = 86789
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2196.590 ; gain = 0.000 ; free physical = 74997 ; free virtual = 84038
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 2196.590 ; gain = 644.391 ; free physical = 74999 ; free virtual = 84037
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 2196.590 ; gain = 644.391 ; free physical = 74999 ; free virtual = 84037
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 2196.590 ; gain = 644.391 ; free physical = 75001 ; free virtual = 84039
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/reader_v1_0_M00_AXI.v:247]
+WARNING: [Synth 8-6014] Unused sequential element axi_wdata_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/reader_v1_0_M00_AXI.v:262]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/ExtCol.v:68]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/ExtCol.v:68]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/ExtCol.v:68]
+WARNING: [Synth 8-6014] Unused sequential element r_size_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/ExtCol.v:37]
+WARNING: [Synth 8-6014] Unused sequential element write_index_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:481]
+WARNING: [Synth 8-6014] Unused sequential element write_offset_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:496]
+INFO: [Synth 8-5544] ROM "transaction_split_state1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "transaction_split_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 2196.590 ; gain = 644.391 ; free physical = 74982 ; free virtual = 84020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 10    
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      1 Bit       Adders := 2     
++---Registers : 
+	              512 Bit    Registers := 2     
+	              128 Bit    Registers := 2     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 6     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 27    
++---Muxes : 
+	   4 Input    128 Bit        Muxes := 1     
+	   2 Input    128 Bit        Muxes := 1     
+	   3 Input    128 Bit        Muxes := 1     
+	   4 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 31    
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module reader_v1_0_M00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 2     
+Module ExtCol 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module writer_v1_0_M00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input    128 Bit        Muxes := 1     
+	   2 Input    128 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module fetch_unit_v2_0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 1     
+	              128 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input    128 Bit        Muxes := 1     
+	   4 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/reader_v1_0_M00_AXI.v:247]
+WARNING: [Synth 8-6014] Unused sequential element axi_wdata_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/reader_v1_0_M00_AXI.v:262]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/ExtCol.v:68]
+WARNING: [Synth 8-6014] Unused sequential element r_size_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/ExtCol.v:37]
+WARNING: [Synth 8-6014] Unused sequential element write_index_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:481]
+WARNING: [Synth 8-6014] Unused sequential element write_offset_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/src/writer_v1_0_M00_AXI.v:496]
+INFO: [Synth 8-4471] merging register 'tmp_target_addr_reg[31:0]' into 'tmp_target_addr_reg[31:0]' [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/hdl/fetch_unit_v2_0.v:206]
+WARNING: [Synth 8-6014] Unused sequential element tmp_target_addr_reg was removed.  [/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ipshared/84ac/hdl/fetch_unit_v2_0.v:206]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/\mst_exec_state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/start_single_burst_write_reg)
+INFO: [Synth 8-3886] merging instance 'inst/split_burst_length_reg[3]' (FDRE) to 'inst/split_burst_length_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/split_burst_length_reg[4]' (FDRE) to 'inst/split_burst_length_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/split_burst_length_reg[5]' (FDRE) to 'inst/split_burst_length_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/split_burst_length_reg[6]' (FDRE) to 'inst/split_burst_length_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/split_address_reg[0]' (FDRE) to 'inst/split_address_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/split_address_reg[1]' (FDRE) to 'inst/split_address_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\split_address_reg[2] )
+INFO: [Synth 8-3886] merging instance 'inst/r_size_reg_reg[5]' (FDRE) to 'inst/r_size_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/r_size_reg_reg[6]' (FDRE) to 'inst/r_size_reg_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\r_size_reg_reg[7] )
+INFO: [Synth 8-3886] merging instance 'inst/reader_v1_0_M00_AXI_inst/axi_araddr_reg[0]' (FDE) to 'inst/reader_v1_0_M00_AXI_inst/axi_araddr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/reader_v1_0_M00_AXI_inst/axi_araddr_reg[1]' (FDE) to 'inst/reader_v1_0_M00_AXI_inst/axi_araddr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/reader_v1_0_M00_AXI_inst/axi_araddr_reg[2]' (FDE) to 'inst/reader_v1_0_M00_AXI_inst/axi_araddr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/\axi_araddr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_7/\axi_awaddr_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/writer_v1_0_M00_AXI_inst/axi_arvalid_reg)
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[0]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[1]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[2]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[3]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[4]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[5]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[6]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[7]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[8]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[9]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[10]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[11]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[12]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[13]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[14]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[15]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[16]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[17]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[18]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[19]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[20]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[21]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[22]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[23]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[24]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[25]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[26]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[27]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[28]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[29]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[30]' (FDRE) to 'inst/writer_v1_0_M00_AXI_inst/axi_araddr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/writer_v1_0_M00_AXI_inst/\axi_araddr_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/reader_v1_0_M00_AXI_inst/\write_index_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/reader_v1_0_M00_AXI_inst/i_8/\axi_wdata_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_awaddr_reg[0]' (FDE) to 'inst/writer_v1_0_M00_AXI_inst/axi_awaddr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_awaddr_reg[1]' (FDE) to 'inst/writer_v1_0_M00_AXI_inst/axi_awaddr_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/writer_v1_0_M00_AXI_inst/\axi_awaddr_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (mst_exec_state_reg[0]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (compare_done_reg) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (ERROR_reg) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (start_single_burst_write_reg) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awvalid_reg) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[0]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[1]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[2]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[3]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[4]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[5]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[6]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[7]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[8]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[9]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[10]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[11]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[12]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[13]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[14]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[15]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[16]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[17]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[18]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[19]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[20]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[21]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[22]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[23]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[24]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[25]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[26]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[27]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[28]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[29]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[30]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[31]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (write_index_reg[0]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wvalid_reg) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[0]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[1]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[2]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[3]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[4]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[5]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[6]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[7]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[8]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[9]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[10]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[11]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[12]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[13]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[14]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[15]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[16]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[17]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[18]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[19]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[20]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[21]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[22]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[23]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[24]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[25]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[26]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[27]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[28]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[29]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[30]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[31]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[32]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[33]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[34]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[35]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[36]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[37]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[38]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[39]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[40]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[41]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[42]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[43]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[44]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[45]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[46]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[47]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[48]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[49]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[50]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[51]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[52]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[53]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[54]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[55]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[56]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[57]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[58]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[59]) is unused and will be removed from module reader_v1_0_M00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_wdata_reg[60]) is unused and will be removed from module reader_v1_0_M00_AXI.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/writer_v1_0_M00_AXI_inst/\axi_awaddr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\split_burst_length_reg[7] )
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_awlen_reg[4]' (FDE) to 'inst/writer_v1_0_M00_AXI_inst/axi_awlen_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_awlen_reg[5]' (FDE) to 'inst/writer_v1_0_M00_AXI_inst/axi_awlen_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_awlen_reg[3]' (FDE) to 'inst/writer_v1_0_M00_AXI_inst/axi_awlen_reg[7]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:49 . Memory (MB): peak = 2244.574 ; gain = 692.375 ; free physical = 74519 ; free virtual = 83563
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:22 . Memory (MB): peak = 2850.590 ; gain = 1298.391 ; free physical = 72679 ; free virtual = 81760
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:23 . Memory (MB): peak = 2852.590 ; gain = 1300.391 ; free physical = 72670 ; free virtual = 81752
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/writer_v1_0_M00_AXI_inst/axi_awlen_reg[6]' (FDE) to 'inst/writer_v1_0_M00_AXI_inst/axi_awlen_reg[7]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:25 . Memory (MB): peak = 2891.621 ; gain = 1339.422 ; free physical = 72685 ; free virtual = 81766
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:25 . Memory (MB): peak = 2891.621 ; gain = 1339.422 ; free physical = 72682 ; free virtual = 81763
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:25 . Memory (MB): peak = 2891.621 ; gain = 1339.422 ; free physical = 72682 ; free virtual = 81763
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:26 . Memory (MB): peak = 2891.621 ; gain = 1339.422 ; free physical = 72683 ; free virtual = 81764
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:26 . Memory (MB): peak = 2891.621 ; gain = 1339.422 ; free physical = 72683 ; free virtual = 81764
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:26 . Memory (MB): peak = 2891.621 ; gain = 1339.422 ; free physical = 72684 ; free virtual = 81764
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:26 . Memory (MB): peak = 2891.621 ; gain = 1339.422 ; free physical = 72684 ; free virtual = 81764
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |    14|
+|2     |LUT1   |     9|
+|3     |LUT2   |    42|
+|4     |LUT3   |   339|
+|5     |LUT4   |   425|
+|6     |LUT5   |   920|
+|7     |LUT6   |  1597|
+|8     |FDRE   |  1464|
+|9     |FDSE   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------------+--------------------+------+
+|      |Instance                     |Module              |Cells |
++------+-----------------------------+--------------------+------+
+|1     |top                          |                    |  4811|
+|2     |  inst                       |fetch_unit_v2_0     |  4811|
+|3     |    extcol_inst              |ExtCol              |  2423|
+|4     |    reader_v1_0_M00_AXI_inst |reader_v1_0_M00_AXI |    80|
+|5     |    writer_v1_0_M00_AXI_inst |writer_v1_0_M00_AXI |   525|
++------+-----------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:26 . Memory (MB): peak = 2891.621 ; gain = 1339.422 ; free physical = 72684 ; free virtual = 81764
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 442 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:01:06 . Memory (MB): peak = 2891.621 ; gain = 695.031 ; free physical = 72721 ; free virtual = 81801
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:26 . Memory (MB): peak = 2891.629 ; gain = 1339.422 ; free physical = 72721 ; free virtual = 81801
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+122 Infos, 241 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:28 . Memory (MB): peak = 2930.637 ; gain = 1399.812 ; free physical = 72713 ; free virtual = 81794
+INFO: [Common 17-1381] The checkpoint '/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.runs/fetch_unit_fetch_unit_0_0_synth_1/fetch_unit_fetch_unit_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.srcs/sources_1/bd/fetch_unit/ip/fetch_unit_fetch_unit_0_0/fetch_unit_fetch_unit_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/ro0zkhosh/RelMem/RelationalMem/ZYNQ_ULTRASCARE+_bkp_sep_20/RatMem/RatMem.runs/fetch_unit_fetch_unit_0_0_synth_1/fetch_unit_fetch_unit_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fetch_unit_fetch_unit_0_0_utilization_synth.rpt -pb fetch_unit_fetch_unit_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.32 . Memory (MB): peak = 2954.648 ; gain = 0.000 ; free physical = 73577 ; free virtual = 82663
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 19 12:17:27 2021...

@@ -1,0 +1,832 @@
+
+*** Running vivado
+    with args -log design_1_workaholIP_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_workaholIP_0_1.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_workaholIP_0_1.tcl -notrace
+Command: synth_design -top design_1_workaholIP_0_1 -part xczu9eg-ffvb1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2018.09' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22554 
+WARNING: [Synth 8-1958] event expressions must result in a singular type [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_S00_AXI.v:598]
+WARNING: [Synth 8-2507] parameter declaration becomes local in workaholIP_v1_0_M00_AXI with formal parameter declaration list [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:192]
+WARNING: [Synth 8-2507] parameter declaration becomes local in workaholIP_v1_0_M01_AXI with formal parameter declaration list [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:192]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1548.297 ; gain = 0.000 ; free physical = 3251 ; free virtual = 25113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_workaholIP_0_1' [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ip/design_1_workaholIP_0_1/synth/design_1_workaholIP_0_1.v:56]
+INFO: [Synth 8-638] synthesizing module 'workaholIP_v1_0' [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0.v:4]
+	Parameter C_S00_AXI_ID_WIDTH bound to: 16 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_S00_AXI_AWUSER_WIDTH bound to: 16 - type: integer 
+	Parameter C_S00_AXI_ARUSER_WIDTH bound to: 16 - type: integer 
+	Parameter C_S00_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S00_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S00_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M00_AXI_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M00_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M00_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M01_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M01_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M01_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M01_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_INTR_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_INTR_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_NUM_OF_INTR bound to: 1 - type: integer 
+	Parameter C_INTR_SENSITIVITY bound to: -1 - type: integer 
+	Parameter C_INTR_ACTIVE_STATE bound to: -1 - type: integer 
+	Parameter C_IRQ_SENSITIVITY bound to: 1 - type: integer 
+	Parameter C_IRQ_ACTIVE_STATE bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'workaholIP_v1_0_S00_AXI' [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_ID_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_S_AXI_AWUSER_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXI_ARUSER_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 7 - type: integer 
+	Parameter USER_NUM_MEM bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'workaholIP_v1_0_S00_AXI' (1#1) [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-638] synthesizing module 'workaholIP_v1_0_M00_AXI' [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:4]
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_TRANSACTIONS_NUM bound to: 4 - type: integer 
+	Parameter C_MASTER_LENGTH bound to: 12 - type: integer 
+	Parameter C_NO_BURSTS_REQ bound to: 6 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter INIT_WRITE bound to: 2'b01 
+	Parameter INIT_READ bound to: 2'b10 
+	Parameter INIT_COMPARE bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:753]
+INFO: [Synth 8-256] done synthesizing module 'workaholIP_v1_0_M00_AXI' (2#1) [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:4]
+INFO: [Synth 8-638] synthesizing module 'workaholIP_v1_0_M01_AXI' [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:4]
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_TRANSACTIONS_NUM bound to: 4 - type: integer 
+	Parameter C_MASTER_LENGTH bound to: 12 - type: integer 
+	Parameter C_NO_BURSTS_REQ bound to: 6 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter INIT_WRITE bound to: 2'b01 
+	Parameter INIT_READ bound to: 2'b10 
+	Parameter INIT_COMPARE bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:753]
+INFO: [Synth 8-256] done synthesizing module 'workaholIP_v1_0_M01_AXI' (3#1) [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:4]
+INFO: [Synth 8-638] synthesizing module 'workaholIP_v1_0_S_AXI_INTR' [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_S_AXI_INTR.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_NUM_OF_INTR bound to: 1 - type: integer 
+	Parameter C_INTR_SENSITIVITY bound to: -1 - type: integer 
+	Parameter C_INTR_ACTIVE_STATE bound to: -1 - type: integer 
+	Parameter C_IRQ_SENSITIVITY bound to: 1 - type: integer 
+	Parameter C_IRQ_ACTIVE_STATE bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element intr_all_ff_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_S_AXI_INTR.v:512]
+INFO: [Synth 8-256] done synthesizing module 'workaholIP_v1_0_S_AXI_INTR' (4#1) [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_S_AXI_INTR.v:4]
+INFO: [Synth 8-256] done synthesizing module 'workaholIP_v1_0' (5#1) [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'design_1_workaholIP_0_1' (6#1) [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ip/design_1_workaholIP_0_1/synth/design_1_workaholIP_0_1.v:56]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[31]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[30]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[29]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[28]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[27]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[26]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[25]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[24]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[23]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[22]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[21]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[20]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[19]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[18]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[17]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[16]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[15]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[14]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[13]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[12]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[11]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[10]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[9]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[8]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[7]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[6]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[5]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[4]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[3]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[2]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[1]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S_AXI_INTR has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_M01_AXI has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_M01_AXI has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_M01_AXI has unconnected port M_AXI_BUSER[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_M01_AXI has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_M01_AXI has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_M01_AXI has unconnected port M_AXI_RUSER[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_M00_AXI has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_M00_AXI has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_M00_AXI has unconnected port M_AXI_BUSER[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_M00_AXI has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_M00_AXI has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_M00_AXI has unconnected port M_AXI_RUSER[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWSIZE[2]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWSIZE[1]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWSIZE[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWLOCK
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWCACHE[3]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWCACHE[2]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWCACHE[1]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWCACHE[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWQOS[3]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWQOS[2]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWQOS[1]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWQOS[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWREGION[3]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWREGION[2]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWREGION[1]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWREGION[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[15]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[14]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[13]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[12]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[11]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[10]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[9]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[8]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[7]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[6]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[5]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[4]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[3]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[2]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[1]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_AWUSER[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_WUSER[-1]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_WUSER[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_ARSIZE[2]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_ARSIZE[1]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_ARSIZE[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_ARLOCK
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_ARCACHE[3]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_ARCACHE[2]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_ARCACHE[1]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_ARCACHE[0]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design workaholIP_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1548.297 ; gain = 0.000 ; free physical = 3209 ; free virtual = 25072
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1548.297 ; gain = 0.000 ; free physical = 3191 ; free virtual = 25054
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2172.234 ; gain = 0.000 ; free physical = 1467 ; free virtual = 23339
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 2172.234 ; gain = 623.938 ; free physical = 1277 ; free virtual = 23149
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 2172.234 ; gain = 623.938 ; free physical = 1277 ; free virtual = 23149
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 2172.234 ; gain = 623.938 ; free physical = 1279 ; free virtual = 23151
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'axi_ruser_reg[-1:0]' into 'axi_buser_reg[-1:0]' [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_S00_AXI.v:234]
+WARNING: [Synth 8-6014] Unused sequential element axi_ruser_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_S00_AXI.v:234]
+WARNING: [Synth 8-6014] Unused sequential element axi_awlen_cntr_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_S00_AXI.v:287]
+WARNING: [Synth 8-6014] Unused sequential element axi_arlen_cntr_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_S00_AXI.v:444]
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:243]
+WARNING: [Synth 8-6014] Unused sequential element write_index_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:441]
+WARNING: [Synth 8-6014] Unused sequential element axi_wdata_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:258]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:268]
+WARNING: [Synth 8-6014] Unused sequential element read_index_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:573]
+WARNING: [Synth 8-6014] Unused sequential element expected_rdata_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:641]
+WARNING: [Synth 8-6014] Unused sequential element write_burst_counter_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:700]
+WARNING: [Synth 8-6014] Unused sequential element read_burst_counter_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:720]
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:243]
+WARNING: [Synth 8-6014] Unused sequential element write_index_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:441]
+WARNING: [Synth 8-6014] Unused sequential element axi_wdata_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:258]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:268]
+WARNING: [Synth 8-6014] Unused sequential element read_index_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:573]
+WARNING: [Synth 8-6014] Unused sequential element expected_rdata_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:641]
+WARNING: [Synth 8-6014] Unused sequential element write_burst_counter_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:700]
+WARNING: [Synth 8-6014] Unused sequential element read_burst_counter_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:720]
+INFO: [Synth 8-5544] ROM "intr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 2172.234 ; gain = 623.938 ; free physical = 1271 ; free virtual = 23142
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 10    
+	                7 Bit    Registers := 4     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 61    
++---RAMs : 
+	               2K Bit         RAMs := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 4     
+	   4 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 36    
+	   4 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module workaholIP_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 10    
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 8     
++---RAMs : 
+	               2K Bit         RAMs := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 4     
+	   4 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 2     
+Module workaholIP_v1_0_M00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 7     
+Module workaholIP_v1_0_M01_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 7     
+Module workaholIP_v1_0_S_AXI_INTR 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'inst/workaholIP_v1_0_S00_AXI_inst/axi_awlen_reg[7:0]' into 'inst/workaholIP_v1_0_S00_AXI_inst/axi_awlen_reg[7:0]' [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_S00_AXI.v:238]
+INFO: [Synth 8-4471] merging register 'inst/workaholIP_v1_0_S00_AXI_inst/axi_arlen_reg[7:0]' into 'inst/workaholIP_v1_0_S00_AXI_inst/axi_arlen_reg[7:0]' [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_S00_AXI.v:446]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_S00_AXI_inst/axi_buser_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_S00_AXI.v:228]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_S00_AXI_inst/axi_awlen_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_S00_AXI.v:238]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_S00_AXI_inst/axi_arlen_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_S00_AXI.v:446]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_S00_AXI_inst/axi_arlen_cntr_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_S00_AXI.v:444]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_S00_AXI_inst/axi_awlen_cntr_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_S00_AXI.v:287]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_M00_AXI_inst/write_burst_counter_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:700]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_M00_AXI_inst/read_index_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:573]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_M00_AXI_inst/read_burst_counter_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:720]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_M00_AXI_inst/expected_rdata_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:641]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_M00_AXI_inst/axi_awaddr_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:243]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_M00_AXI_inst/write_index_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:441]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_M00_AXI_inst/axi_wdata_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:258]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_M00_AXI_inst/axi_araddr_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M00_AXI.v:268]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_M01_AXI_inst/write_burst_counter_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:700]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_M01_AXI_inst/read_index_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:573]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_M01_AXI_inst/read_burst_counter_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:720]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_M01_AXI_inst/expected_rdata_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:641]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_M01_AXI_inst/axi_awaddr_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:243]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_M01_AXI_inst/write_index_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:441]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_M01_AXI_inst/axi_wdata_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:258]
+WARNING: [Synth 8-6014] Unused sequential element inst/workaholIP_v1_0_M01_AXI_inst/axi_araddr_reg was removed.  [/home/renato/RationalMem/RatMem/RatMem.srcs/sources_1/bd/design_1/ipshared/df75/hdl/workaholIP_v1_0_M01_AXI.v:268]
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awid[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awlen[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awlen[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awlen[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awlen[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awlen[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awlen[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awlen[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awlen[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awsize[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awsize[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awsize[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awburst[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awburst[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awlock driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awcache[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awcache[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awcache[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awcache[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awprot[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awprot[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awprot[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awqos[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awqos[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awqos[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awqos[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_awuser[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_wstrb[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_wstrb[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_wstrb[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_wstrb[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_wuser[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arid[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arlen[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arlen[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arlen[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arlen[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arlen[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arlen[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arlen[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arlen[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arsize[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arsize[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arsize[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arburst[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arburst[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arlock driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arcache[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arcache[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arcache[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arcache[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arprot[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arprot[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arprot[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arqos[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arqos[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arqos[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_arqos[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m01_axi_aruser[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awid[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awlen[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awlen[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awlen[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awlen[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awlen[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awlen[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awlen[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awlen[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awsize[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awsize[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awsize[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awburst[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awburst[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awlock driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awcache[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awcache[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awcache[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awcache[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awprot[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awprot[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awprot[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awqos[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awqos[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awqos[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awqos[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_awuser[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_wstrb[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_wstrb[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_wstrb[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_wstrb[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_wuser[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_arid[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_arlen[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_arlen[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_arlen[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_arlen[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_arlen[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_arlen[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_arlen[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_workaholIP_0_1 has port m00_axi_arlen[0] driven by constant 1
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_42/\inst/workaholIP_v1_0_M00_AXI_inst/axi_araddr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_42/\inst/workaholIP_v1_0_M00_AXI_inst/axi_araddr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_42/\inst/workaholIP_v1_0_M00_AXI_inst/axi_araddr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_42/\inst/workaholIP_v1_0_M00_AXI_inst/axi_araddr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_42/\inst/workaholIP_v1_0_M00_AXI_inst/axi_araddr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_42/\inst/workaholIP_v1_0_M00_AXI_inst/axi_araddr_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_38/\inst/workaholIP_v1_0_M00_AXI_inst/axi_awaddr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_38/\inst/workaholIP_v1_0_M00_AXI_inst/axi_awaddr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_38/\inst/workaholIP_v1_0_M00_AXI_inst/axi_awaddr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_38/\inst/workaholIP_v1_0_M00_AXI_inst/axi_awaddr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_38/\inst/workaholIP_v1_0_M00_AXI_inst/axi_awaddr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_38/\inst/workaholIP_v1_0_M00_AXI_inst/axi_awaddr_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_65/\inst/workaholIP_v1_0_M01_AXI_inst/axi_araddr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_65/\inst/workaholIP_v1_0_M01_AXI_inst/axi_araddr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_65/\inst/workaholIP_v1_0_M01_AXI_inst/axi_araddr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_65/\inst/workaholIP_v1_0_M01_AXI_inst/axi_araddr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_65/\inst/workaholIP_v1_0_M01_AXI_inst/axi_araddr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_65/\inst/workaholIP_v1_0_M01_AXI_inst/axi_araddr_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_61/\inst/workaholIP_v1_0_M01_AXI_inst/axi_awaddr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_61/\inst/workaholIP_v1_0_M01_AXI_inst/axi_awaddr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_61/\inst/workaholIP_v1_0_M01_AXI_inst/axi_awaddr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_61/\inst/workaholIP_v1_0_M01_AXI_inst/axi_awaddr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_61/\inst/workaholIP_v1_0_M01_AXI_inst/axi_awaddr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_61/\inst/workaholIP_v1_0_M01_AXI_inst/axi_awaddr_reg[5] )
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rresp_reg[0]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[1]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[2]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[3]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[4]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[5]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[6]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[7]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[8]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[9]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[10]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[11]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[12]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[13]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[14]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[15]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[16]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[17]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[18]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[19]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[20]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[21]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[22]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[23]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[24]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[25]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[26]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[27]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[28]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[29]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[30]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_bresp_reg[0]' (FDRE) to 'inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/workaholIP_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/workaholIP_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/workaholIP_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/workaholIP_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/workaholIP_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M00_AXI_inst/axi_awaddr_reg[2]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M00_AXI_inst/axi_awaddr_reg[3]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M00_AXI_inst/axi_awaddr_reg[4]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M00_AXI_inst/axi_awaddr_reg[5]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M00_AXI_inst/axi_araddr_reg[2]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M00_AXI_inst/axi_araddr_reg[3]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M00_AXI_inst/axi_araddr_reg[4]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M00_AXI_inst/axi_araddr_reg[5]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M01_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M01_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M01_AXI_inst/axi_awaddr_reg[2]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M01_AXI_inst/axi_awaddr_reg[3]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M01_AXI_inst/axi_awaddr_reg[4]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M01_AXI_inst/axi_awaddr_reg[5]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M01_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M01_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M01_AXI_inst/axi_araddr_reg[2]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M01_AXI_inst/axi_araddr_reg[3]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M01_AXI_inst/axi_araddr_reg[4]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_M01_AXI_inst/axi_araddr_reg[5]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_bresp_reg[1]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_awaddr_reg[1]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_awaddr_reg[0]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_araddr_reg[1]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_araddr_reg[0]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rdata_reg[31]) is unused and will be removed from module design_1_workaholIP_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/workaholIP_v1_0_S_AXI_INTR_inst/axi_rresp_reg[1]) is unused and will be removed from module design_1_workaholIP_0_1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 2172.234 ; gain = 623.938 ; free physical = 1225 ; free virtual = 23097
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++-------------------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name              | RTL Object                                | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-------------------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|workaholIP_v1_0_S00_AXI: | BRAM_GEN[0].BYTE_BRAM_GEN[0].byte_ram_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      |                 | 
+|workaholIP_v1_0_S00_AXI: | BRAM_GEN[0].BYTE_BRAM_GEN[1].byte_ram_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      |                 | 
+|workaholIP_v1_0_S00_AXI: | BRAM_GEN[0].BYTE_BRAM_GEN[2].byte_ram_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      |                 | 
+|workaholIP_v1_0_S00_AXI: | BRAM_GEN[0].BYTE_BRAM_GEN[3].byte_ram_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      |                 | 
++-------------------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:01:07 . Memory (MB): peak = 2795.172 ; gain = 1246.875 ; free physical = 284 ; free virtual = 21458
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:01:07 . Memory (MB): peak = 2795.172 ; gain = 1246.875 ; free physical = 283 ; free virtual = 21457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++-------------------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name              | RTL Object                                | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-------------------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|workaholIP_v1_0_S00_AXI: | BRAM_GEN[0].BYTE_BRAM_GEN[0].byte_ram_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      |                 | 
+|workaholIP_v1_0_S00_AXI: | BRAM_GEN[0].BYTE_BRAM_GEN[1].byte_ram_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      |                 | 
+|workaholIP_v1_0_S00_AXI: | BRAM_GEN[0].BYTE_BRAM_GEN[2].byte_ram_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      |                 | 
+|workaholIP_v1_0_S00_AXI: | BRAM_GEN[0].BYTE_BRAM_GEN[3].byte_ram_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      |                 | 
++-------------------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/workaholIP_v1_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[0].byte_ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/workaholIP_v1_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[1].byte_ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/workaholIP_v1_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[2].byte_ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/workaholIP_v1_0_S00_AXI_inst/BRAM_GEN[0].BYTE_BRAM_GEN[3].byte_ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:01:07 . Memory (MB): peak = 2818.219 ; gain = 1269.922 ; free physical = 287 ; free virtual = 21462
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 2818.219 ; gain = 1269.922 ; free physical = 274 ; free virtual = 21448
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 2818.219 ; gain = 1269.922 ; free physical = 273 ; free virtual = 21447
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 2818.219 ; gain = 1269.922 ; free physical = 267 ; free virtual = 21441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 2818.219 ; gain = 1269.922 ; free physical = 266 ; free virtual = 21440
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 2818.219 ; gain = 1269.922 ; free physical = 264 ; free virtual = 21439
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 2818.219 ; gain = 1269.922 ; free physical = 264 ; free virtual = 21438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |    44|
+|2     |LUT1     |    27|
+|3     |LUT2     |    87|
+|4     |LUT3     |    36|
+|5     |LUT4     |    82|
+|6     |LUT5     |    38|
+|7     |LUT6     |    91|
+|8     |RAMB18E2 |     4|
+|9     |FDRE     |   399|
+|10    |FDSE     |     9|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------------------------------+---------------------------+------+
+|      |Instance                            |Module                     |Cells |
++------+------------------------------------+---------------------------+------+
+|1     |top                                 |                           |   817|
+|2     |  inst                              |workaholIP_v1_0            |   817|
+|3     |    workaholIP_v1_0_M00_AXI_inst    |workaholIP_v1_0_M00_AXI    |   254|
+|4     |    workaholIP_v1_0_M01_AXI_inst    |workaholIP_v1_0_M01_AXI    |   254|
+|5     |    workaholIP_v1_0_S00_AXI_inst    |workaholIP_v1_0_S00_AXI    |   256|
+|6     |    workaholIP_v1_0_S_AXI_INTR_inst |workaholIP_v1_0_S_AXI_INTR |    53|
++------+------------------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 2818.219 ; gain = 1269.922 ; free physical = 263 ; free virtual = 21437
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 163 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 2818.219 ; gain = 645.984 ; free physical = 292 ; free virtual = 21467
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 2818.227 ; gain = 1269.922 ; free physical = 292 ; free virtual = 21466
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+236 Infos, 144 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:09 . Memory (MB): peak = 2869.234 ; gain = 1342.312 ; free physical = 230 ; free virtual = 21376
+INFO: [Common 17-1381] The checkpoint '/home/renato/RationalMem/RatMem/RatMem.runs/design_1_workaholIP_0_1_synth_1/design_1_workaholIP_0_1.dcp' has been generated.

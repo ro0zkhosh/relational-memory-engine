@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_zynq_ultra_ps_e_0_0_synth_1" LaunchDir="/home/parul/RationamMem/RatMem/RatMem.runs/design_1_zynq_ultra_ps_e_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_bram_ctrl_0_0_synth_1" LaunchDir="/home/parul/RationamMem/RatMem/RatMem.runs/design_1_axi_bram_ctrl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_smartconnect_0_0_synth_1" LaunchDir="/home/parul/RationamMem/RatMem/RatMem.runs/design_1_smartconnect_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_rst_ps8_0_99M_0_synth_1" LaunchDir="/home/parul/RationamMem/RatMem/RatMem.runs/design_1_rst_ps8_0_99M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_bram_ctrl_0_bram_0_synth_1" LaunchDir="/home/parul/RationamMem/RatMem/RatMem.runs/design_1_axi_bram_ctrl_0_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

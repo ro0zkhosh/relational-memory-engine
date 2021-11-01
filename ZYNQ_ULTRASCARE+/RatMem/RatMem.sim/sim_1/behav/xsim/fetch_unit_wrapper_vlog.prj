@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../RatMem.srcs/sources_1/bd/fetch_unit/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/fetch_unit/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/read_write_master/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/read_write_master/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/design_1/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/design_1/ipshared/cfaa/hdl" --include "/home/ro0zkhosh/Xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../RatMem.ip_user_files/bd/fetch_unit/ipshared/e761/src/ExtCol.v" \
+"../../../../RatMem.ip_user_files/bd/fetch_unit/ipshared/e761/src/reader_v1_0_M00_AXI.v" \
+"../../../../RatMem.ip_user_files/bd/fetch_unit/ipshared/e761/src/writer_v1_0_M00_AXI.v" \
+"../../../../RatMem.ip_user_files/bd/fetch_unit/ipshared/e761/hdl/fetch_unit_v2_0.v" \
+"../../../../RatMem.ip_user_files/bd/fetch_unit/ip/fetch_unit_fetch_unit_0_0/sim/fetch_unit_fetch_unit_0_0.v" \
+
+sv xil_defaultlib  --include "../../../../RatMem.srcs/sources_1/bd/fetch_unit/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/fetch_unit/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/read_write_master/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/read_write_master/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/design_1/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/design_1/ipshared/cfaa/hdl" --include "/home/ro0zkhosh/Xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../RatMem.ip_user_files/bd/fetch_unit/ip/fetch_unit_axi_vip_0_0/sim/fetch_unit_axi_vip_0_0_pkg.sv" \
+"../../../../RatMem.ip_user_files/bd/fetch_unit/ip/fetch_unit_axi_vip_0_0/sim/fetch_unit_axi_vip_0_0.sv" \
+"../../../../RatMem.ip_user_files/bd/fetch_unit/ip/fetch_unit_axi_vip_0_1/sim/fetch_unit_axi_vip_0_1_pkg.sv" \
+"../../../../RatMem.ip_user_files/bd/fetch_unit/ip/fetch_unit_axi_vip_0_1/sim/fetch_unit_axi_vip_0_1.sv" \
+
+verilog xil_defaultlib  --include "../../../../RatMem.srcs/sources_1/bd/fetch_unit/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/fetch_unit/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/read_write_master/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/read_write_master/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../RatMem.srcs/sources_1/bd/design_1/ipshared/02c8/hdl/verilog" --include "../../../../RatMem.srcs/sources_1/bd/design_1/ipshared/cfaa/hdl" --include "/home/ro0zkhosh/Xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../RatMem.ip_user_files/bd/fetch_unit/sim/fetch_unit.v" \
+"../../../../RatMem.srcs/sources_1/bd/fetch_unit/hdl/fetch_unit_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
